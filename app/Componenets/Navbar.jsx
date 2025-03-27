@@ -1,16 +1,39 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
+  const [subDropdown, setSubDropdown] = useState(null);
+
+  // References for dropdown and sub-dropdown to prevent disappearance
+  const dropdownRef = useRef(null);
+  const subDropdownRef = useRef(null);
+
+  // Close dropdowns only when clicking outside the entire menu
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target) &&
+        subDropdownRef.current &&
+        !subDropdownRef.current.contains(e.target)
+      ) {
+        setDropdown(null);
+        setSubDropdown(null);
+      }
+    };
+
+    window.addEventListener("mousedown", handleClickOutside);
+    return () => window.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <>
-      <div className="w-full h-[60px] bg-black flex justify-center items-center relative ">
+      <div className="w-full h-[60px] bg-black flex justify-center items-center relative">
         <div className="w-[100%] max-w-[1200px] h-[40px] flex justify-between items-center px-3">
           <div className="text-white font-bold text-md flex gap-2">
-            <small className=" flex justify-center items-center gap-1">
+            <small className="flex justify-center items-center gap-1">
               <img
                 width="15"
                 height="10"
@@ -24,12 +47,12 @@ export default function Navbar() {
                 width="15"
                 height="10"
                 src="https://img.icons8.com/material-rounded/24/FFFFFF/phone--v1.png"
-                alt="phone--v1"
+                alt="phone"
               />
               9888451930
             </small>
           </div>
-          <div className="">
+          <div>
             <img
               width="48"
               height="48"
@@ -49,34 +72,122 @@ export default function Navbar() {
             />
           </div>
 
-          {/* Navbar Links with Dropdown */}
+          {/* Navbar Links */}
           <div className="text-white min-w-[50%] gap-5 flex justify-evenly items-center font-bold text-sm max-lg:text-xs max-lg:hidden">
             <Link href="/">HOME</Link>
 
+            {/* ACADEMICS */}
             <div
               className="relative group"
-              onMouseEnter={() => setDropdown("cbse")}
+              onMouseEnter={() => setDropdown("academics")}
               onMouseLeave={() => setDropdown(null)}
             >
-              <Link href="/">ACADEMICS </Link>
-              {dropdown === "cbse" && (
-                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md overflow-hidden w-[200px]">
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+              <Link href="/" className="flex items-center">
+                ACADEMICS
+              </Link>
+
+              {dropdown === "academics" && (
+                <div
+                  ref={dropdownRef}
+                  className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-20"
+                >
+                  <div
+                    className="block px-4 py-2 hover:bg-gray-200 relative"
+                    onMouseEnter={() => setSubDropdown("messages")}
+                    onMouseLeave={() => setSubDropdown(null)}
+                  >
                     Messages
-                  </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  </div>
+
+                  {/* Sub-dropdown with proper gap */}
+                  {subDropdown === "messages" && (
+                    <div
+                      ref={subDropdownRef}
+                      onMouseEnter={() => setSubDropdown("messages")}
+                      onMouseLeave={() => setSubDropdown(null)}
+                      className="absolute left-full top-0 bg-white text-black shadow-md rounded-md w-[200px] z-30"
+                    >
+                      <Link
+                        href="/messages/founder"
+                        className="block px-4 py-2 hover:bg-gray-200"
+                      >
+                        Founder
+                      </Link>
+                      <Link
+                        href="/messages/president"
+                        className="block px-4 py-2 hover:bg-gray-200"
+                      >
+                        President
+                      </Link>
+                      <Link
+                        href="/messages/vice-president"
+                        className="block px-4 py-2 hover:bg-gray-200"
+                      >
+                        Vice-President
+                      </Link>
+                      <Link
+                        href="/messages/principal"
+                        className="block px-4 py-2 hover:bg-gray-200"
+                      >
+                        Principal
+                      </Link>
+                    </div>
+                  )}
+
+                  <Link
+                    href="/exam-schedule"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     Exam Schedules
                   </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+
+                  <div
+                    className="block px-4 py-2 hover:bg-gray-200 relative"
+                    onMouseEnter={() => setSubDropdown("cbse-result")}
+                    onMouseLeave={() => setSubDropdown(null)}
+                  >
                     CBSE Results
-                  </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  </div>
+
+                  {/* Sub-dropdown with proper gap */}
+                  {subDropdown === "cbse-result" && (
+                    <div
+                      ref={subDropdownRef}
+                      onMouseEnter={() => setSubDropdown("cbse-result")}
+                      onMouseLeave={() => setSubDropdown(null)}
+                      className="absolute left-full bottom-0 bg-white text-black shadow-md rounded-md w-[200px] z-30"
+                    >
+                      <Link
+                        href="/cbse-result/session-2018-19"
+                        className="block px-4 py-2 hover:bg-gray-200"
+                      >
+                        Session 2018-19
+                      </Link>
+                      <Link
+                        href="/cbse-result/session-2019-20"
+                        className="block px-4 py-2 hover:bg-gray-200"
+                      >
+                        Session 2019-20
+                      </Link>
+                      <Link
+                        href="/cbse-result/session-2020-21"
+                        className="block px-4 py-2 hover:bg-gray-200"
+                      >
+                        Session 2020-21
+                      </Link>
+                    </div>
+                  )}
+                  <Link
+                    href="/school-calender"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     SCHOOL CALENDAR
                   </Link>
                 </div>
               )}
             </div>
 
+            {/* INFRASTRUCTURE */}
             <div
               className="relative group"
               onMouseEnter={() => setDropdown("infrastructure")}
@@ -84,7 +195,7 @@ export default function Navbar() {
             >
               <Link href="/">INFRASTRUCTURE</Link>
               {dropdown === "infrastructure" && (
-                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] overflow-hidden">
+                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-20">
                   <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
                     Infrastructure
                   </Link>
@@ -94,21 +205,21 @@ export default function Navbar() {
                   <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
                     MORE PHOTOS
                   </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
-                    Public Discloser
-                  </Link>
                 </div>
               )}
             </div>
 
+            {/* ACTIVITIES */}
             <div
               className="relative group"
               onMouseEnter={() => setDropdown("activities")}
               onMouseLeave={() => setDropdown(null)}
             >
-              <Link href="/">ACTIVITIES</Link>
+              <Link href="/" className="flex items-center">
+                ACTIVITIES
+              </Link>
               {dropdown === "activities" && (
-                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md overflow-hidden w-[200px]">
+                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px]">
                   <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
                     Elementary Wing
                   </Link>
@@ -121,16 +232,18 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+
+            {/* CBSE */}
             <div
               className="relative group"
-              onMouseEnter={() => setDropdown("academics")}
+              onMouseEnter={() => setDropdown("cbse")}
               onMouseLeave={() => setDropdown(null)}
             >
               <Link href="/">CBSE</Link>
-              {dropdown === "academics" && (
-                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md overflow-hidden w-[200px]">
+              {dropdown === "cbse" && (
+                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-10">
                   <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
-                    Book List
+                    CBSE Results
                   </Link>
                   <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
                     Transfer Certificates
@@ -138,7 +251,9 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+
             <Link href="/">NEWS & EVENTS</Link>
+            <Link href="/">PUBLIC DISCLOSER</Link>
             <Link href="/">CONTACT US</Link>
           </div>
 
@@ -148,7 +263,7 @@ export default function Navbar() {
               width="20"
               height="20"
               src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v1.png"
-              alt="menu--v1"
+              alt="menu"
             />
           </div>
         </div>
