@@ -181,19 +181,21 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="text-white min-w-[50%] gap-5 flex justify-evenly items-center font-bold text-sm max-lg:text-xs max-lg:hidden">
+          <div className="text-white min-w-[50%] gap-5 flex justify-evenly items-center font-bold text-sm max-xl:text-xs max-lg:hidden">
             {navItems.map((item) => (
               <div key={item.name} className="relative group">
                 {item.href ? (
-                  <Link href={item.href}>{item.name}</Link>
+                  <Link href={item.href}>
+                    <small>{item.name}</small>
+                  </Link>
                 ) : (
                   <>
-                    <div
+                    <small
                       className="cursor-pointer"
                       onMouseEnter={() => setDropdown(item.name)}
                     >
                       {item.name}
-                    </div>
+                    </small>
 
                     {dropdown === item.name && (
                       <div
