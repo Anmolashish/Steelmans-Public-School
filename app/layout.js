@@ -4,6 +4,7 @@ import Navbar from "./Componenets/Navbar";
 import Footer from "./Componenets/Footer";
 import { SchoolData } from "./Data/SchoolData";
 import Loader from "./Componenets/Loader";
+import Sidebar from "./Componenets/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       >
         <Loader />
         <Navbar />
+        <Sidebar />
         <SchoolData>{children}</SchoolData>
         <Footer />
       </body>

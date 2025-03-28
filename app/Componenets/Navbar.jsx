@@ -1,65 +1,173 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
+import { FiMenu, FiX, FiChevronDown, FiChevronRight } from "react-icons/fi";
 
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
   const [subDropdown, setSubDropdown] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // References for dropdown and sub-dropdown to prevent disappearance
   const dropdownRef = useRef(null);
   const subDropdownRef = useRef(null);
+  const sidebarRef = useRef(null);
 
-  // Close dropdowns only when clicking outside the entire menu
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdown(null);
+      }
       if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target) &&
         subDropdownRef.current &&
         !subDropdownRef.current.contains(e.target)
       ) {
-        setDropdown(null);
         setSubDropdown(null);
+      }
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(e.target) &&
+        !e.target.closest(".mobile-menu-button")
+      ) {
+        setSidebarOpen(false);
       }
     };
 
-    window.addEventListener("mousedown", handleClickOutside);
-    return () => window.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeSubDropdown, setActiveSubDropdown] = useState(null);
+
+  // Close sidebar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsOpen(false);
+        setActiveDropdown(null);
+        setActiveSubDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const toggleDropdown = (item) => {
+    if (activeDropdown === item) {
+      setActiveDropdown(null);
+      setActiveSubDropdown(null);
+    } else {
+      setActiveDropdown(item);
+      setActiveSubDropdown(null);
+    }
+  };
+
+  const toggleSubDropdown = (subItem) => {
+    if (activeSubDropdown === subItem) {
+      setActiveSubDropdown(null);
+    } else {
+      setActiveSubDropdown(subItem);
+    }
+  };
+
+  const navItems = [
+    { name: "HOME", href: "/" },
+    {
+      name: "ACADEMICS",
+      submenu: [
+        {
+          name: "Messages",
+          submenu: [
+            { name: "Founder", href: "/messages/founder" },
+            { name: "President", href: "/messages/president" },
+            { name: "Vice-President", href: "/messages/vice-president" },
+            { name: "Principal", href: "/messages/principal" },
+          ],
+        },
+        { name: "Exam Schedules", href: "/exam-schedule" },
+        {
+          name: "CBSE Results",
+          submenu: [
+            { name: "Session 2018-19", href: "/cbse-result/session-2018-19" },
+            { name: "Session 2019-20", href: "/cbse-result/session-2019-20" },
+            { name: "Session 2020-21", href: "/cbse-result/session-2020-21" },
+          ],
+        },
+        { name: "SCHOOL CALENDAR", href: "/school-calender" },
+      ],
+    },
+    {
+      name: "INFRASTRUCTURE",
+      submenu: [
+        { name: "Infrastructure", href: "/infrastructure" },
+        { name: "Sports", href: "/sports" },
+        { name: "MORE PHOTOS", href: "/more-photos" },
+      ],
+    },
+    {
+      name: "ACTIVITIES",
+      submenu: [
+        { name: "Elementary Wing", href: "/elementary-wing" },
+        { name: "Primary Wing", href: "/primary-wing" },
+        { name: "Clubs", href: "/activities/clubs" },
+      ],
+    },
+    {
+      name: "CBSE",
+      submenu: [
+        { name: "Book List", href: "/cbse/book-list" },
+        { name: "Transfer Certificates", href: "/cbse/transfer-certificates" },
+      ],
+    },
+    { name: "NEWS & EVENTS", href: "/news-and-events" },
+    { name: "PUBLIC DISCLOSER", href: "/public-discloser" },
+    { name: "CONTACT US", href: "/contact" },
+  ];
 
   return (
     <>
+      {/* Top Info Bar */}
       <div className="w-full h-[60px] bg-black flex justify-center items-center relative">
         <div className="w-[100%] max-w-[1200px] h-[40px] flex justify-between items-center px-3">
           <div className="text-white font-bold text-md flex gap-2">
-            <small className="flex justify-center items-center gap-1">
+            <a
+              href="mailto:info@steelmansschool.com"
+              className="flex justify-center items-center gap-1"
+            >
               <img
                 width="15"
                 height="10"
                 src="https://img.icons8.com/material/50/FFFFFF/mail.png"
                 alt="mail"
               />
-              info@steelmansschool.com
-            </small>
-            <small className="flex justify-center items-center gap-1">
+              <small>info@steelmansschool.com</small>
+            </a>
+            <a
+              href="tel:9888451930"
+              className="flex justify-center items-center gap-1"
+            >
               <img
                 width="15"
                 height="10"
                 src="https://img.icons8.com/material-rounded/24/FFFFFF/phone--v1.png"
                 alt="phone"
               />
-              9888451930
-            </small>
+              <small>9888451930</small>
+            </a>
           </div>
-          <div>
+          <a href="https://www.facebook.com/steelmansschool" target="_blank">
             <img
               width="48"
               height="48"
               src="https://img.icons8.com/fluency/48/facebook.png"
               alt="facebook"
             />
-          </div>
+          </a>
         </div>
 
         {/* Main Navbar */}
@@ -72,222 +180,196 @@ export default function Navbar() {
             />
           </div>
 
-          {/* Navbar Links */}
+          {/* Desktop Navigation */}
           <div className="text-white min-w-[50%] gap-5 flex justify-evenly items-center font-bold text-sm max-lg:text-xs max-lg:hidden">
-            <Link href="/">HOME</Link>
-
-            {/* ACADEMICS */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setDropdown("academics")}
-              onMouseLeave={() => setDropdown(null)}
-            >
-              <p className="flex items-center">ACADEMICS</p>
-
-              {dropdown === "academics" && (
-                <div
-                  ref={dropdownRef}
-                  className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-20"
-                >
-                  <div
-                    className="block px-4 py-2 hover:bg-gray-200 relative"
-                    onMouseEnter={() => setSubDropdown("messages")}
-                    onMouseLeave={() => setSubDropdown(null)}
-                  >
-                    Messages
-                  </div>
-
-                  {/* Sub-dropdown with proper gap */}
-                  {subDropdown === "messages" && (
+            {navItems.map((item) => (
+              <div key={item.name} className="relative group">
+                {item.href ? (
+                  <Link href={item.href}>{item.name}</Link>
+                ) : (
+                  <>
                     <div
-                      ref={subDropdownRef}
-                      onMouseEnter={() => setSubDropdown("messages")}
-                      onMouseLeave={() => setSubDropdown(null)}
-                      className="absolute left-full top-0 bg-white text-black shadow-md rounded-md w-[200px] z-30"
+                      className="cursor-pointer"
+                      onMouseEnter={() => setDropdown(item.name)}
                     >
-                      <Link
-                        href="/messages/founder"
-                        className="block px-4 py-2 hover:bg-gray-200"
-                      >
-                        Founder
-                      </Link>
-                      <Link
-                        href="/messages/president"
-                        className="block px-4 py-2 hover:bg-gray-200"
-                      >
-                        President
-                      </Link>
-                      <Link
-                        href="/messages/vice-president"
-                        className="block px-4 py-2 hover:bg-gray-200"
-                      >
-                        Vice-President
-                      </Link>
-                      <Link
-                        href="/messages/principal"
-                        className="block px-4 py-2 hover:bg-gray-200"
-                      >
-                        Principal
-                      </Link>
+                      {item.name}
                     </div>
-                  )}
 
-                  <Link
-                    href="/exam-schedule"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Exam Schedules
-                  </Link>
-
-                  <div
-                    className="block px-4 py-2 hover:bg-gray-200 relative"
-                    onMouseEnter={() => setSubDropdown("cbse-result")}
-                    onMouseLeave={() => setSubDropdown(null)}
-                  >
-                    CBSE Results
-                  </div>
-
-                  {/* Sub-dropdown with proper gap */}
-                  {subDropdown === "cbse-result" && (
-                    <div
-                      ref={subDropdownRef}
-                      onMouseEnter={() => setSubDropdown("cbse-result")}
-                      onMouseLeave={() => setSubDropdown(null)}
-                      className="absolute left-full bottom-0 bg-white text-black shadow-md rounded-md w-[200px] z-30"
-                    >
-                      <Link
-                        href="/cbse-result/session-2018-19"
-                        className="block px-4 py-2 hover:bg-gray-200"
+                    {dropdown === item.name && (
+                      <div
+                        ref={dropdownRef}
+                        className="absolute left-0 top-full bg-white text-black shadow-md rounded-md w-[200px] z-20"
+                        onMouseLeave={() => setDropdown(null)}
                       >
-                        Session 2018-19
-                      </Link>
-                      <Link
-                        href="/cbse-result/session-2019-20"
-                        className="block px-4 py-2 hover:bg-gray-200"
-                      >
-                        Session 2019-20
-                      </Link>
-                      <Link
-                        href="/cbse-result/session-2020-21"
-                        className="block px-4 py-2 hover:bg-gray-200"
-                      >
-                        Session 2020-21
-                      </Link>
-                    </div>
-                  )}
-                  <Link
-                    href="/school-calender"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    SCHOOL CALENDAR
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* INFRASTRUCTURE */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setDropdown("infrastructure")}
-              onMouseLeave={() => setDropdown(null)}
-            >
-              <div>INFRASTRUCTURE</div>
-              {dropdown === "infrastructure" && (
-                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-20">
-                  <Link
-                    href="/infrastructure"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Infrastructure
-                  </Link>
-                  <Link
-                    href="/sports"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Sports
-                  </Link>
-                  <Link
-                    href="/more-photos"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    MORE PHOTOS
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* ACTIVITIES */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setDropdown("activities")}
-              onMouseLeave={() => setDropdown(null)}
-            >
-              <p className="flex items-center">ACTIVITIES</p>
-              {dropdown === "activities" && (
-                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px]">
-                  <Link
-                    href="/elementary-wing"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Elementary Wing
-                  </Link>
-                  <Link
-                    href="/primary-wing"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Primary Wing
-                  </Link>
-                  <Link
-                    href="/activities/clubs"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Clubs
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* CBSE */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setDropdown("cbse")}
-              onMouseLeave={() => setDropdown(null)}
-            >
-              <p>CBSE</p>
-              {dropdown === "cbse" && (
-                <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-10">
-                  <Link
-                    href="/cbse/book-list"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Book List
-                  </Link>
-                  <Link
-                    href="/cbse/transfer-certificates"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    Transfer Certificates
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            <Link href="/news-and-events">NEWS & EVENTS</Link>
-            <Link href="/public-discloser">PUBLIC DISCLOSER</Link>
-            <Link href="/contact">CONTACT US</Link>
+                        {item.submenu.map((subItem) => (
+                          <div key={subItem.name}>
+                            {subItem.href ? (
+                              <Link
+                                href={subItem.href}
+                                className="block px-4 py-2 hover:bg-gray-200"
+                              >
+                                {subItem.name}
+                              </Link>
+                            ) : (
+                              <div
+                                className="block px-4 py-2 hover:bg-gray-200 relative"
+                                onMouseEnter={() =>
+                                  setSubDropdown(subItem.name)
+                                }
+                              >
+                                {subItem.name}
+                                {subDropdown === subItem.name && (
+                                  <div
+                                    ref={subDropdownRef}
+                                    className="absolute left-full top-0 bg-white text-black shadow-md rounded-md w-[200px] z-30"
+                                    onMouseLeave={() => setSubDropdown(null)}
+                                  >
+                                    {subItem.submenu.map((nestedItem) => (
+                                      <Link
+                                        key={nestedItem.name}
+                                        href={nestedItem.href}
+                                        className="block px-4 py-2 hover:bg-gray-200"
+                                      >
+                                        {nestedItem.name}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
+            ))}
           </div>
 
-          {/* Mobile Menu */}
-          <div className="hidden max-lg:flex max-md:justify-center cursor-pointer">
-            <img
-              width="20"
-              height="20"
-              src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v1.png"
-              alt="menu"
-            />
-          </div>
+          {/* Mobile Menu Button */}
+          <button
+            className="hidden max-lg:flex items-center justify-center p-2 mobile-menu-button"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <FiMenu size={24} className="text-white" />
+          </button>
         </div>
       </div>
+
+      {/* Mobile Sidebar */}
+      <div
+        ref={sidebarRef}
+        className={`fixed inset-y-0 left-0 w-64 bg-gray-800 text-white z-40 transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out lg:hidden`}
+      >
+        <div className="p-4 flex items-center justify-between border-b border-gray-700">
+          <img
+            src="https://steelmansschool.com/wp-content/uploads/2020/11/logo.png"
+            alt="logo"
+            className="h-12"
+          />
+        </div>
+
+        <nav className="mt-4">
+          <ul className="space-y-2 px-4">
+            {navItems.map((item) => (
+              <li key={item.name} className="relative">
+                {item.href ? (
+                  <Link
+                    href={item.href}
+                    className="block py-2 px-4 hover:bg-gray-700 rounded-md"
+                    onClick={() => {
+                      setIsOpen(false);
+                      setActiveDropdown(null);
+                      setActiveSubDropdown(null);
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <div>
+                    <button
+                      className="w-full flex justify-between items-center py-2 px-4 hover:bg-gray-700 rounded-md"
+                      onClick={() => toggleDropdown(item.name)}
+                    >
+                      <span>{item.name}</span>
+                      {activeDropdown === item.name ? (
+                        <FiChevronDown />
+                      ) : (
+                        <FiChevronRight />
+                      )}
+                    </button>
+
+                    {activeDropdown === item.name && item.submenu && (
+                      <ul className="ml-4 mt-2 space-y-2">
+                        {item.submenu.map((subItem) => (
+                          <li key={subItem.name}>
+                            {subItem.href ? (
+                              <Link
+                                href={subItem.href}
+                                className="block py-2 px-4 hover:bg-gray-700 rounded-md"
+                                onClick={() => {
+                                  setIsOpen(false);
+                                  setActiveDropdown(null);
+                                }}
+                              >
+                                {subItem.name}
+                              </Link>
+                            ) : (
+                              <div>
+                                <button
+                                  className="w-full flex justify-between items-center py-2 px-4 hover:bg-gray-700 rounded-md"
+                                  onClick={() =>
+                                    toggleSubDropdown(subItem.name)
+                                  }
+                                >
+                                  <span>{subItem.name}</span>
+                                  {activeSubDropdown === subItem.name ? (
+                                    <FiChevronDown />
+                                  ) : (
+                                    <FiChevronRight />
+                                  )}
+                                </button>
+
+                                {activeSubDropdown === subItem.name && (
+                                  <ul className="ml-4 mt-2 space-y-2">
+                                    {subItem.submenu.map((nestedItem) => (
+                                      <li key={nestedItem.name}>
+                                        <Link
+                                          href={nestedItem.href}
+                                          className="block py-2 px-4 hover:bg-gray-700 rounded-md"
+                                          onClick={() => {
+                                            setIsOpen(false);
+                                            setActiveDropdown(null);
+                                            setActiveSubDropdown(null);
+                                          }}
+                                        >
+                                          {nestedItem.name}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      {/* Overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"></div>
+      )}
     </>
   );
 }
