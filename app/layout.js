@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./Componenets/Navbar";
 import Footer from "./Componenets/Footer";
 import { SchoolData } from "./Data/SchoolData";
+import Loader from "./Componenets/Loader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Loader />
         <Navbar />
         <SchoolData>{children}</SchoolData>
         <Footer />

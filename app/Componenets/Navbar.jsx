@@ -193,16 +193,25 @@ export default function Navbar() {
               onMouseEnter={() => setDropdown("infrastructure")}
               onMouseLeave={() => setDropdown(null)}
             >
-              <Link href="/">INFRASTRUCTURE</Link>
+              <div>INFRASTRUCTURE</div>
               {dropdown === "infrastructure" && (
                 <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-20">
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/infrastructure"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     Infrastructure
                   </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/sports"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     Sports
                   </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/more-photos"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     MORE PHOTOS
                   </Link>
                 </div>
@@ -220,13 +229,22 @@ export default function Navbar() {
               </Link>
               {dropdown === "activities" && (
                 <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px]">
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/elementary-wing"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     Elementary Wing
                   </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/primary-wing"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     Primary Wing
                   </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/activities/clubs"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     Clubs
                   </Link>
                 </div>
@@ -242,17 +260,23 @@ export default function Navbar() {
               <Link href="/">CBSE</Link>
               {dropdown === "cbse" && (
                 <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-10">
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
-                    CBSE Results
+                  <Link
+                    href="/cbse/book-list"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
+                    Book List
                   </Link>
-                  <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/cbse/transfer-certificates"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     Transfer Certificates
                   </Link>
                 </div>
               )}
             </div>
 
-            <Link href="/">NEWS & EVENTS</Link>
+            <Link href="/news-and-events">NEWS & EVENTS</Link>
             <Link href="/">PUBLIC DISCLOSER</Link>
             <Link href="/">CONTACT US</Link>
           </div>
