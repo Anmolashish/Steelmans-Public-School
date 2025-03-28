@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HomePage1() {
@@ -17,12 +18,12 @@ export default function HomePage1() {
               <h1 className="text-white text-[24px] font-bold">
                 Photo Gallery
               </h1>
-              <a
-                href="#"
+              <Link
+                href="/more-photos"
                 className="text-[#FFB606] font-bold hover:underline text-sm"
               >
                 View more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="h-[150px] bg-[rgb(0,0,0,0.6)] flex p-2 gap-2 flex-grow w-[30%] hover:bg-black transition duration-400">
@@ -37,12 +38,12 @@ export default function HomePage1() {
               <h1 className="text-white text-[24px] font-bold">
                 School Facility
               </h1>
-              <a
-                href="#"
+              <Link
+                href="/infrastructure"
                 className="text-[#FFB606] font-bold hover:underline text-sm"
               >
                 View more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="h-[150px] bg-[rgb(0,0,0,0.6)] flex p-2 gap-2 flex-grow w-[30%] hover:bg-black transition duration-400">
@@ -55,10 +56,10 @@ export default function HomePage1() {
             </div>
             <div className="w-[60%] h-full flex flex-col justify-center gap-2">
               <h1 className="text-white text-[24px] font-bold">
-                Sports Facility
+                Exam Schedules
               </h1>
               <a
-                href="#"
+                href="/exam-schedule"
                 className="text-[#FFB606] font-bold hover:underline text-sm"
               >
                 View more

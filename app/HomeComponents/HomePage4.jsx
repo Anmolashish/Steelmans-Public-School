@@ -1,5 +1,6 @@
 import React from "react";
 import NewsCard from "../Componenets/NewsCard";
+import Link from "next/link";
 
 export default function HomePage4() {
   const data = [
@@ -27,7 +28,10 @@ export default function HomePage4() {
           {data.map((item) => {
             return <NewsCard key={item.id} image={item.image} />;
           })}
-          <div className="bg-white rounded-3xl p-2 w-[300px] h-[350px] border-1 flex flex-col justify-center items-center ">
+          <Link
+            href="/news-and-events"
+            className="bg-white rounded-3xl p-2 w-[300px] h-[350px] border-1 flex flex-col justify-center items-center "
+          >
             <div className="flex justify-center items-center ">
               <img
                 width="50"
@@ -39,7 +43,7 @@ export default function HomePage4() {
             <div className="flex justify-center items-center">
               <p className="text-lg font-bold text-black">View more</p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

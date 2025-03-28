@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -10,24 +11,24 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">COMPANY</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link href="/" className="hover:text-blue-400">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400">
-                  Blog
-                </a>
+                <Link href="/cbse/book-list" className="hover:text-blue-400">
+                  Books
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link href="/contact" className="hover:text-blue-400">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400">
-                  Facilities
-                </a>
+                <Link href="/infrastucture" className="hover:text-blue-400">
+                  Infrastructure
+                </Link>
               </li>
             </ul>
           </div>
@@ -37,24 +38,33 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">MESSAGES</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link href="/messages/founder" className="hover:text-blue-400">
                   Founder
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link
+                  href="/messages/principal"
+                  className="hover:text-blue-400"
+                >
                   Principal
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link
+                  href="/messages/vice-president"
+                  className="hover:text-blue-400"
+                >
                   Vice-President
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link
+                  href="/messages/president"
+                  className="hover:text-blue-400"
+                >
                   President
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -64,26 +74,29 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">LINKS</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link href="/news-and-events" className="hover:text-blue-400">
                   News and Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400">
+                <Link href="/more-photos" className="hover:text-blue-400">
                   Photo Gallery
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* School Logo & Info */}
-          <div className="flex flex-col items-center text-center col-span-2">
+          <Link
+            href={"/"}
+            className="flex flex-col items-center text-center col-span-2"
+          >
             <img
               src="https://steelmansschool.com/wp-content/uploads/2020/11/logo.png"
               alt="Steelmans Public School"
               className="w-full h-full object-contain mb-3"
             />
-          </div>
+          </Link>
         </div>
 
         {/* Bottom Section */}

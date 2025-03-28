@@ -106,39 +106,227 @@ export function SchoolData({ children }) {
           },
         ],
       },
-    ],
-    sports: [
+
       {
-        id: 1,
-        name: "School Building",
+        id: 2,
+        name: "Library",
         images: [
           {
             id: 1,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2020/11/1-2-768x309.jpg",
-            title: "Main Building",
+              "https://steelmansschool.com/wp-content/uploads/2016/03/Library-6-768x512.jpg",
+            title: "Library",
           },
           {
             id: 2,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2019/11/Elementary-Wing-768x296.jpg",
-            title: "Elementary Wing",
+              "https://steelmansschool.com/wp-content/uploads/2016/03/Library-2-768x512.jpg",
+            title: "Library",
           },
           {
             id: 3,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2019/11/PrimaryWing-768x512.jpg",
-            title: "Primary Wing",
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Library-8-768x512.jpg",
+            title: "Library",
           },
           {
             id: 4,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2019/11/SeniorWing-1-768x512.jpg",
-            title: "Main Building",
+              "https://steelmansschool.com/wp-content/uploads/2019/11/library-768x512.jpg",
+            title: "Library",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "School Labs",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Bio_Lab-1-768x512.jpg",
+            title: "Biology Lab",
+          },
+          {
+            id: 2,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Chemistry_Lab-2-768x392.jpg",
+            title: "Chemistry Lab",
+          },
+          {
+            id: 3,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Physics_Lab-2-768x512.jpg",
+            title: "Physics Lab",
+          },
+          {
+            id: 4,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/ComputerLabs-768x512.jpg",
+            title: "Computer Lab",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Playground",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Yoga-768x512.jpg",
+            title: "Playground",
+          },
+          {
+            id: 2,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/03/Playgrounds-3-768x512.jpg",
+            title: "Playground",
+          },
+          {
+            id: 3,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/03/Playgrounds-1-768x512.jpg",
+            title: "Playground",
+          },
+          {
+            id: 4,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/03/Playgrounds-2-768x512.jpg",
+            title: "Playground",
           },
         ],
       },
     ],
+    sports: [
+      {
+        id: 1,
+        name: "Lawn Tennis",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Tennis-1024x683.jpg",
+            title: "Lawn Tennis Court",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Basket Ball",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/BasketBall-1024x683.jpg",
+            title: "Basket Ball Court",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Volley Ball",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/VolleyBall.jpg",
+            title: "Volley Ball Court",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Badminton",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Badminton-1024x683.jpg",
+            title: "Badminton Court",
+          },
+        ],
+      },
+      {
+        id: 5,
+        name: "Table Tennis",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/TableTennis-1024x683.jpg",
+            title: "Table Tennis Court",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Yoga",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Yoga-1024x683.jpg",
+            title: "Yoga Session 1",
+          },
+          {
+            id: 2,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sp-1.jpeg",
+            title: "Yoga Session 2",
+          },
+          {
+            id: 3,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sp-3.jpeg",
+            title: "Yoga Session 3",
+          },
+          {
+            id: 4,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sp-4.jpeg",
+            title: "Yoga Session 4",
+          },
+          {
+            id: 5,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sp-5.jpeg",
+            title: "Yoga Session 5",
+          },
+          {
+            id: 6,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sp-2.jpeg",
+            title: "Yoga Session 6",
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: "Swimming",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sw-2-scaled.jpeg",
+            title: "Swimming Pool 1",
+          },
+          {
+            id: 2,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sw-1-scaled.jpeg",
+            title: "Swimming Pool 2",
+          },
+          {
+            id: 3,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2024/07/sw-3-scaled.jpeg",
+            title: "Swimming Pool 3",
+          },
+        ],
+      },
+    ],
+
     elementaryWing: [
       {
         id: 1,

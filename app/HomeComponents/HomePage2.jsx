@@ -6,7 +6,7 @@ export default function HomePage2() {
     {
       id: 1,
       name: "Elementry Wing",
-      link: "/activities/elementry-wing",
+      link: "/elementary-wing",
       image: [
         "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0070-1-300x300.jpg",
         "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0073-300x300.jpg",
@@ -15,7 +15,7 @@ export default function HomePage2() {
     {
       id: 2,
       name: "Primary Wing",
-      link: "/activities/primary-wing",
+      link: "/primary-wing",
       image: [
         "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0065-300x300.jpg",
         "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0072-300x300.jpg",
