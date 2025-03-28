@@ -181,7 +181,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="text-white min-w-[50%] gap-5 flex justify-evenly items-center font-bold text-md max-2xl:text-sm max-xl:text-xs max-lg:hidden">
+          <div className="text-white min-w-[60%] gap-5 flex justify-evenly items-center font-bold text-md  max-xl:text-xs max-lg:hidden">
             {navItems.map((item) => (
               <div key={item.name} className="relative group">
                 {item.href ? (
