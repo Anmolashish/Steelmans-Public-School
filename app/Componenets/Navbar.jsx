@@ -82,9 +82,7 @@ export default function Navbar() {
               onMouseEnter={() => setDropdown("academics")}
               onMouseLeave={() => setDropdown(null)}
             >
-              <Link href="/" className="flex items-center">
-                ACADEMICS
-              </Link>
+              <p className="flex items-center">ACADEMICS</p>
 
               {dropdown === "academics" && (
                 <div
@@ -224,9 +222,7 @@ export default function Navbar() {
               onMouseEnter={() => setDropdown("activities")}
               onMouseLeave={() => setDropdown(null)}
             >
-              <Link href="/" className="flex items-center">
-                ACTIVITIES
-              </Link>
+              <p className="flex items-center">ACTIVITIES</p>
               {dropdown === "activities" && (
                 <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px]">
                   <Link
@@ -257,7 +253,7 @@ export default function Navbar() {
               onMouseEnter={() => setDropdown("cbse")}
               onMouseLeave={() => setDropdown(null)}
             >
-              <Link href="/">CBSE</Link>
+              <p>CBSE</p>
               {dropdown === "cbse" && (
                 <div className="absolute left-0 top-[100%] bg-white text-black shadow-md rounded-md w-[200px] z-10">
                   <Link
@@ -277,8 +273,8 @@ export default function Navbar() {
             </div>
 
             <Link href="/news-and-events">NEWS & EVENTS</Link>
-            <Link href="/">PUBLIC DISCLOSER</Link>
-            <Link href="/">CONTACT US</Link>
+            <Link href="/public-discloser">PUBLIC DISCLOSER</Link>
+            <Link href="/contact">CONTACT US</Link>
           </div>
 
           {/* Mobile Menu */}

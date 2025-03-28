@@ -107,6 +107,38 @@ export function SchoolData({ children }) {
         ],
       },
     ],
+    sports: [
+      {
+        id: 1,
+        name: "School Building",
+        images: [
+          {
+            id: 1,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2020/11/1-2-768x309.jpg",
+            title: "Main Building",
+          },
+          {
+            id: 2,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/Elementary-Wing-768x296.jpg",
+            title: "Elementary Wing",
+          },
+          {
+            id: 3,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/PrimaryWing-768x512.jpg",
+            title: "Primary Wing",
+          },
+          {
+            id: 4,
+            image:
+              "https://steelmansschool.com/wp-content/uploads/2019/11/SeniorWing-1-768x512.jpg",
+            title: "Main Building",
+          },
+        ],
+      },
+    ],
     elementaryWing: [
       {
         id: 1,
