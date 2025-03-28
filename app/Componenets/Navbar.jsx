@@ -172,13 +172,13 @@ export default function Navbar() {
 
         {/* Main Navbar */}
         <div className="w-full h-[100px] flex justify-between items-center absolute px-7 top-[60px] z-10 bg-gradient-to-b from-black to-transparent">
-          <div className="h-full flex w-[40%]">
+          <Link href={"/"} className="h-full flex w-[40%]">
             <img
               src="https://steelmansschool.com/wp-content/uploads/2020/11/logo.png"
               alt="logo"
               className="max-h-[70%] min-w-[250px]"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="text-white min-w-[50%] gap-5 flex justify-evenly items-center font-bold text-sm max-lg:text-xs max-lg:hidden">
