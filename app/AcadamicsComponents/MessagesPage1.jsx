@@ -48,7 +48,7 @@ export default function MessagesPage1(props) {
             })}
           </div>
         </div>
-        <div className="main w-[80%] gap-5 p4 flex min-h-[20vh] h-fit max-w-[1200px] py-10">
+        <div className="main w-[80%] gap-5 p4 flex min-h-[20vh] h-fit border-t-2 border-b-2 mb-4 max-w-[1200px] py-10">
           <div className="text-3xl text-center font-bold ">{message.quote}</div>
         </div>
       </div>
