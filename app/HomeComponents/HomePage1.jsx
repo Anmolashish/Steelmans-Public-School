@@ -84,9 +84,7 @@ export default function HomePage1() {
             />
           </div>
           <div className="w-[60%] h-full flex flex-col justify-center gap-2">
-            <h1 className="text-white text-[24px] font-bold">
-              Best Industry Leaders
-            </h1>
+            <h1 className="text-white text-[24px] font-bold">Photo Gallery</h1>
             <a
               href="#"
               className="text-[#FFB606] font-bold hover:underline text-sm"
@@ -106,7 +104,7 @@ export default function HomePage1() {
           </div>
           <div className="w-[60%] h-full flex flex-col justify-center gap-2">
             <h1 className="text-white text-[24px] font-bold">
-              Learn Couses Online
+              School Facility
             </h1>
             <a
               href="#"
@@ -125,9 +123,7 @@ export default function HomePage1() {
             />
           </div>
           <div className="w-[60%] h-full flex flex-col justify-center gap-2">
-            <h1 className="text-white text-[24px] font-bold">
-              Book Library & Store
-            </h1>
+            <h1 className="text-white text-[24px] font-bold">Exam Schedules</h1>
             <a
               href="#"
               className="text-[#FFB606] font-bold hover:underline text-sm"
