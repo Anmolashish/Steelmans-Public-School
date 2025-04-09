@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <HomePage1 />
       <HomePage2 />
-      <HomePage3 />
+      {/* <HomePage3 /> */}
       <HomePage4 />
       <HomePage5 />
     </>

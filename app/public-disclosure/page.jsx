@@ -5,7 +5,7 @@ import PublicDiscloser from "../OnePageComponent/PublicDiscloser";
 export default function page() {
   return (
     <>
-      <Header heading={"Public Discloser"} />
+      <Header heading={"Public Disclosure"} />
       <PublicDiscloser />
     </>
   );

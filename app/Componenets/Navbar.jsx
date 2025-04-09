@@ -125,7 +125,7 @@ export default function Navbar() {
       ],
     },
     { name: "NEWS & EVENTS", href: "/news-and-events" },
-    { name: "PUBLIC DISCLOSER", href: "/public-discloser" },
+    { name: "PUBLIC DISCLOSURE", href: "/public-disclosure" },
     { name: "CONTACT US", href: "/contact" },
   ];
 
@@ -136,7 +136,7 @@ export default function Navbar() {
         <div className="w-[100%] max-w-[1200px] h-[40px] flex justify-between items-center px-3">
           <div className="text-white font-bold text-md flex gap-2">
             <a
-              href="mailto:info@steelmansschool.com"
+              href="mailto:channosteelmans@gmail.com"
               className="flex justify-center items-center gap-1"
             >
               <img
@@ -145,7 +145,7 @@ export default function Navbar() {
                 src="https://img.icons8.com/material/50/FFFFFF/mail.png"
                 alt="mail"
               />
-              <small>info@steelmansschool.com</small>
+              <small>channosteelmans@gmail.com</small>
             </a>
             <a
               href="tel:9888451930"
