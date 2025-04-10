@@ -1,44 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 
-export default function MorePhotos() {
-  // NASA Trip images
-  const nasaImages = [
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2019/03/ArtCraft_2019007-440x440.jpg",
-      alt: "Students participating in art and craft activities during NASA trip",
-    },
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2019/03/PATH_2019003-1-440x440.jpg",
-      alt: "Students exploring science exhibits at NASA",
-    },
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2018/11/IMG_1602-440x440.jpg",
-      alt: "Group photo of students during NASA visit",
-    },
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2018/11/IMG_1611-440x440.jpg",
-      alt: "Students interacting with NASA exhibits",
-    },
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2018/11/IMG_1604-440x440.jpg",
-      alt: "Students learning about space technology",
-    },
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2018/11/independence_day-1-440x440.jpg",
-      alt: "NASA trip cultural celebration",
-    },
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2018/11/independence_day-3-440x440.jpg",
-      alt: "Students performing during NASA trip event",
-    },
-    {
-      src: "https://steelmansschool.com/wp-content/uploads/2018/11/Tiger_day-8-440x440.jpg",
-      alt: "Special activities during NASA visit",
-    },
-  ];
-
+export default function MorePhotos(props) {
+  const nasaImages = props.data;
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
@@ -47,10 +11,10 @@ export default function MorePhotos() {
         {/* Page Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            NASA Trip Gallery
+            {props.heading}
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our students' memorable journey to NASA
+            {props.description}
           </p>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
         </div>

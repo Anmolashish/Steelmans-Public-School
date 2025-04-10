@@ -58,12 +58,12 @@ export default function HomePage1() {
               <h1 className="text-white text-[24px] font-bold">
                 Exam Schedules
               </h1>
-              <a
+              <Link
                 href="/exam-schedule"
                 className="text-[#FFB606] font-bold hover:underline text-sm"
               >
                 View more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -85,12 +85,12 @@ export default function HomePage1() {
           </div>
           <div className="w-[60%] h-full flex flex-col justify-center gap-2">
             <h1 className="text-white text-[24px] font-bold">Photo Gallery</h1>
-            <a
-              href="#"
+            <Link
+              href="/more-photos"
               className="text-[#FFB606] font-bold hover:underline text-sm"
             >
               View more
-            </a>
+            </Link>
           </div>
         </div>
         <div className="h-[150px] w-[90%] bg-black transition duration-400 flex p-2">
@@ -106,12 +106,12 @@ export default function HomePage1() {
             <h1 className="text-white text-[24px] font-bold">
               School Facility
             </h1>
-            <a
-              href="#"
+            <Link
+              href="/infrastructure"
               className="text-[#FFB606] font-bold hover:underline text-sm"
             >
               View more
-            </a>
+            </Link>
           </div>
         </div>
         <div className="h-[150px] w-[90%] bg-black transition duration-400 flex p-2">
@@ -124,12 +124,12 @@ export default function HomePage1() {
           </div>
           <div className="w-[60%] h-full flex flex-col justify-center gap-2">
             <h1 className="text-white text-[24px] font-bold">Exam Schedules</h1>
-            <a
-              href="#"
+            <Link
+              href="/exam-schedule"
               className="text-[#FFB606] font-bold hover:underline text-sm"
             >
               View more
-            </a>
+            </Link>
           </div>
         </div>
       </div>

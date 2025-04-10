@@ -174,7 +174,7 @@ export default function Navbar() {
         <div className="w-full h-[100px] flex justify-between items-center absolute px-7 top-[60px] z-10 bg-gradient-to-b from-black to-transparent">
           <Link href={"/"} className="h-full flex w-[40%]">
             <img
-              src="https://steelmansschool.com/wp-content/uploads/2020/11/logo.png"
+              src="/Images/logo.png"
               alt="logo"
               className="max-h-[70%] min-w-[250px]"
             />

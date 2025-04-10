@@ -460,6 +460,11 @@ export function SchoolData({ children }) {
     ],
     primaryWing: [
       {
+        id: 0,
+        heading: "Year 2025-26",
+        images: [],
+      },
+      {
         id: 1,
         heading: "World Health Day",
         images: [
