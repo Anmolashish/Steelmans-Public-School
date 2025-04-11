@@ -92,7 +92,7 @@ export default function Footer() {
             className="flex flex-col items-center text-center col-span-2"
           >
             <img
-              src="https://steelmansschool.com/wp-content/uploads/2020/11/logo.png"
+              src="/Images/logo.png"
               alt="Steelmans Public School"
               className="w-full h-full object-contain mb-3"
             />
