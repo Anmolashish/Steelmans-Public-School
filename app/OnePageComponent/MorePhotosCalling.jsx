@@ -23,7 +23,7 @@ export default function MorePhotosCalling() {
     },
     {
       id: 3,
-      name: "Farewell 2024-25",
+      name: "Farewell (2024-25)",
       link: "/more-photos/farewell-2024-25",
       image: [
         "/Images/IMG-20250411-WA0082.jpg",

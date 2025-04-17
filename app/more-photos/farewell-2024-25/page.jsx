@@ -103,10 +103,10 @@ export default function page() {
   ];
   return (
     <>
-      <Header heading={"Farewell 2024-25"} />
+      <Header heading={"Farewell (2024-25)"} />
       <MorePhotos
         data={data}
-        heading="Farewell 2024-25"
+        heading="Farewell (2024-25)"
         description="Explore our students' Farewell gallary"
       />
     </>
