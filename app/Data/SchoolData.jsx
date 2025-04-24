@@ -329,7 +329,7 @@ export function SchoolData({ children }) {
     elementaryWing: [
       {
         id: 0.2,
-        heading: "Graduaction Day (2025-26)",
+        heading: "Graduation Day (2025-26)",
         images: [
          "/graduation-images/IMG-20250417-WA0052.jpg",
 "/graduation-images/IMG-20250417-WA0153.jpg",
