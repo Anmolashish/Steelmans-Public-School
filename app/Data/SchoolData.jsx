@@ -380,7 +380,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 1,
-        heading: "Book Mark Activity (2025-26)",
+        heading: "Book Mark Activity ",
         images: [
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0034-150x150.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0031-150x150.jpg",
@@ -434,7 +434,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 2,
-        heading: "World Health Day (2025-26)",
+        heading: "World Health Day",
         images: [
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0067-150x150.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0068-150x150.jpg",
@@ -444,7 +444,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 3,
-        heading: "Earth Day (2025-26)",
+        heading: "Earth Day",
         images: [
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0052-150x150.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0051-150x150.jpg",
@@ -466,7 +466,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 4,
-        heading: "Basant Panchmi Pictures (2025-26)",
+        heading: "Basant Panchmi Pictures ",
         images: [
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG_3687-150x150.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG_3690-150x150.jpg",
@@ -489,7 +489,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 6,
-        heading: "Republic Day (2025-26)",
+        heading: "Republic Day ",
         images: [
           "https://steelmansschool.com/wp-content/uploads/2019/11/Class5_Incharge_ManjuSharma-15-180x180.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/ClassPrep_Incharge_HarmanjeetKaur-3-180x180.jpg",
@@ -500,7 +500,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 7,
-        heading: "Mother Day (2025-26)",
+        heading: "Mother Day ",
         images: [
           "https://steelmansschool.com/wp-content/uploads/2024/07/m-1.jpeg",
           "https://steelmansschool.com/wp-content/uploads/2024/07/m-2.jpeg",
