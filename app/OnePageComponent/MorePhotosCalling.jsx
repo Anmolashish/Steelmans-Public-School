@@ -29,6 +29,32 @@ export default function MorePhotosCalling() {
         "/Images/IMG-20250411-WA0082.jpg",
         "/Images/IMG-20250411-WA0084.jpg",
       ],
+
+      
+    },
+
+    {
+      id: 4,
+      name: "Baisakhi (2025-26)",
+      link: "/more-photos/baisakhi-2025-26",
+      image: [
+        "/BAISAKHI/IMG-20250417-WA0052.jpg",
+        "/BAISAKHI/IMG-20250417-WA0153.jpg",
+      ],
+
+      
+    },
+
+    {
+      id: 5,
+      name: "Foundation Day Celebration (2025-26)",
+      link: "/more-photos/foundation-day-2025-26",
+      image: [
+        "/Foundation Day Celebration/WhatsApp Image 2025-04-03 at 15.11.31_5d92ca4f.jpg",
+        "/Foundation Day Celebration/WhatsApp Image 2025-04-03 at 15.14.44_a41e3e2f.jpg",
+      ],
+
+      
     },
   ];
   return (
