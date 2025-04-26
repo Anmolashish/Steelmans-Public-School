@@ -15,6 +15,19 @@ export default function page() {
       eventImage:
         "https://steelmansschool.com/wp-content/uploads/2024/07/FOUNDATION-DAY-CELEBRATION-1-scaled.jpeg",
     },
+    {
+      id: 3,
+      eventName: "Baisakhi Celebration (2025-26)",
+      eventImage:
+        "/Images/WhatsApp Image 2025-04-13 at 13.05.26_ae1f68bf.jpg",
+    },
+
+    {
+      id: 4,
+      eventName: "Turban tying Competition on the occasion of Baisakhi",
+      eventImage:
+        "/Images/WhatsApp Image 2025-04-15 at 10.52.50_fa24ef43.jpg",
+    },
   ];
   return (
     <>
