@@ -12,7 +12,7 @@ export default function SchoolCalendarWithInfrastructure() {
       <div className="w-full h-screen flex justify-center items-center p-5">
         <div className="w-full max-w-[1200px] h-[600px]">
           <h1 className="text-3xl font-bold text-center mb-5">
-            School Calendar (2025–2026)
+            School Calender (2025–2026)
           </h1>
           <div className="w-full h-full">
             <iframe
