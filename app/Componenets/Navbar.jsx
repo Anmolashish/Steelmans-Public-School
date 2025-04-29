@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 import { FiMenu, FiX, FiChevronDown, FiChevronRight } from "react-icons/fi";
@@ -98,8 +98,14 @@ export default function Navbar() {
             { name: "Session 2020-21", href: "/cbse-result/session-2020-21" },
           ],
         },
-        { name: "SCHOOL CALENDAR", href: "/school-calender" },
-      ],
+        {
+          name: "SCHOOL CALENDAR",
+          submenu: [
+            { name: "Session 2025-26", href: "/school-calender" },
+     
+          ],
+        },
+       ],
     },
     {
       name: "INFRASTRUCTURE",
@@ -107,6 +113,7 @@ export default function Navbar() {
         { name: "Infrastructure", href: "/infrastructure" },
         { name: "Sports", href: "/sports" },
         { name: "MORE PHOTOS", href: "/more-photos" },
+ 
       ],
     },
     {
