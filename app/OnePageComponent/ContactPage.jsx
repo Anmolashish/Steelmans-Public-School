@@ -33,7 +33,9 @@ export default function ContactPage() {
                   className="w-6 h-6"
                 />
                 <span className="text-lg font-medium">
-                  info@steelmansschool.com
+
+                  steelmansschool6@gmail.com
+
                 </span>
               </div>
 

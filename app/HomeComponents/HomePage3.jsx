@@ -10,7 +10,7 @@ export default function HomePage3() {
               <div className="text-white text-2xl">
                 Shape your future with{" "}
                 <span className="text-[#ffb606] font-bold">
-                  Steelmans public school
+                  Steelmans Public school
                 </span>
               </div>
               <div className="text-white text-7xl font-black font-sans">

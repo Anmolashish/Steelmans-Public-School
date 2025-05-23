@@ -5,19 +5,19 @@ export default function PublicDiscloser() {
   const pdfData = [
     {
       name: "Water-Testing-Report",
-      link: "http://steelmansschool.com/wp-content/uploads/2025/02/Water-Testing-Report-1-8.pdf",
+      link: "Water testing report  N.pdf",
     },
     {
       name: "Fire-safety-certificate",
-      link: "https://steelmansschool.com/wp-content/uploads/2025/02/Fire-safety-certificate.pdf",
+      link: "fire safety  Certificate .pdf",
     },
-    {
-      name: "Building-Safety-certificate",
-      link: "https://steelmansschool.com/wp-content/uploads/2025/02/Building-Safety-certificate.pdf",
-    },
+    // {
+    //   name: "Building-Safety-certificate",
+    //   link: "https://steelmansschool.com/wp-content/uploads/2025/02/Building-Safety-certificate.pdf",
+    // },
     {
       name: "RTE RECOGNITION CERTIFICATE",
-      link: "https://steelmansschool.com/wp-content/uploads/2025/02/RTE-RECOGNITION-CERTIFICATE.pdf",
+      link: "https://steelmanssch ool.com/wp-content/uploads/2025/02/RTE-RECOGNITION-CERTIFICATE.pdf",
     },
     {
       name: "CERTIFICATE OF REGISTRATION OF SOCIETIES",
@@ -25,21 +25,21 @@ export default function PublicDiscloser() {
     },
     {
       name: "RTE CERTIFICATE",
-      link: "https://steelmansschool.com/wp-content/uploads/2025/02/RTE-CERTIFICATE.pdf",
+      link: "RTE CERTIFICATE.pdf",
     },
     {
       name: "Fee Structure",
-      link: "https://steelmansschool.com/wp-content/uploads/2025/02/FEE-STRUCTURE.pdf",
+      link: "FEE STRUCTURE 2025-26.pdf",
     },
     {
       name: "AFFILIATION EXTENSION LETTER",
-      link: " https://steelmansschool.com/wp-content/uploads/2025/02/AFFILIATION-EXTENSION-LEETER.pdf",
+      link: "Affiliation Extension Letter.pdf",
     },
     {
       name: "ACADEMIC CALENDER",
       link: "https://steelmansschool.com/wp-content/uploads/2025/02/ACADEMIC-CALENDER.pdf",
     },
-    {
+       {
       name: "NOC Certificate",
       link: "https://steelmansschool.com/wp-content/uploads/2025/02/NOC-CERTIFICATE.pdf",
     },

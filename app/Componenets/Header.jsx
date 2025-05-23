@@ -8,7 +8,7 @@ export default function Header(props) {
           <h1 className="text-[#F7F7F7] relative text-6xl font-bold after:content[''] max-sm:text-4xl after:absolute after:h-full after:w-1 after:bg-amber-300 after:left-0 pl-5">
             {props.heading}
           </h1>
-        </div>
+        </div>  
       </div>
     </div>
   );

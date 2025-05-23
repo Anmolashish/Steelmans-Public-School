@@ -4,7 +4,7 @@ import React from "react";
 export default function HomePage1() {
   return (
     <>
-      <div className=" flex justify-center main-section min-h-[calc(100vh-60px)] w-full  bg-blue-400 relative">
+      <div className=" flex justify-center main-section min-h-[calc(100vh-60px)] w-full    relative">
         <div className="absolute min-h-[30vh] w-full max-w-[1200px] bottom-10 flex justify-between flex-wrap max-md:hidden gap-3 items-center ">
           <div className="h-[150px] bg-[rgb(0,0,0,0.6)] flex p-2 gap-2 flex-grow w-[30%] hover:bg-black transition duration-400">
             <div className="w-[40%] flex justify-center items-center h-full">
@@ -67,9 +67,9 @@ export default function HomePage1() {
             </div>
           </div>
         </div>
-        <div className="w-full h-[calc(100vh-60px)]">
+        <div className="w-full h-[calc(100vh-70px)]">
           <img
-            src="https://steelmansschool.com/wp-content/uploads/2020/11/3.jpg"
+            src="https://steelmansschool.com/wp-content/uploads/2020/11/1-2-768x309.jpg"
             className="w-full h-full object-cover"
           />
         </div>
@@ -136,3 +136,4 @@ export default function HomePage1() {
     </>
   );
 }
+  

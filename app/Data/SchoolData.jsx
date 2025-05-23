@@ -47,8 +47,8 @@ export function SchoolData({ children }) {
 
         position: " (Vice-President)",
         message: [
-          "There is nothing that gives me more pleasure than seeing the dreams, the goals and the aspirations we’ve had for Steelmans come true. Nineteen years back we saw a dream. A dream to create a school where leaders are raised and turned into reality by actions. We were sure of our destination and knew what was needed to reach there : hard work, commitment and relentless actions",
-          "What you are holding in your hands is more than a magazine: it’s a record of the milestones we have crossed in this great journey. It’s also a chronicle of our efforts to transform our students into future leaders. Today, marching with us is an army of students who live their dreams everyday and act upon them",
+          "There is nothing that gives me more pleasure than seeing the dreams, the goals and the aspirations we’ve had for Steelmans come true. In  2001   years back we saw a dream. A dream to create a school where leaders are raised and turned into reality by actions. We were sure of our destination and knew what was needed to reach there : hard work, commitment and relentless actions",
+          "  Today, marching with us is an army of students who live their dreams everyday and act upon them",
           "Steelmanians standing out and excelling in competitions, examinations, talent searches and Sports Meets at National and States Levels is very much satisfying. We feel proud to affirm that Steelmans has gone way beyond being a school.",
         ],
         quote:
@@ -64,9 +64,10 @@ export function SchoolData({ children }) {
 
         position: "(Principal)",
         message: [
-          "“Develop a passion for learning if you do, you will never cease to grow”. – Anthony J.D. AngeloEducation plays an important role in enabling a person to face a real life situation with adequate knowledge. School is a temple of learning and in S.P.S we are making our best efforts to give quality education to our students.Steelmans Public School is synonymous with excellence. It envisages imparting the best of education along with moulding of child’s personality and equipping him with all necessary skills to lead a happy, disciplined and successful life.The culture of rural background and the technology of modern world are mixed judiciously at Steelmans Public School to create conducive academic atmosphere, nice ambience for effective, pleasure and better learning and for transforming students into brilliant human beings",
-          "I convey my heartiest gratitude to management for entrusting me with the responsibility of spear-heading Steelmans Public School towards excellence. I firmly believe that together with the support of the management, staff and parents we can pave on the path of success",
-          "“Challenges make you more responsible. Always remember that life without struggle is a life without success. Don’t give up and learn not to quit”.",
+          "As we stand on the threshold of a new academic session, I extend a hearty and warm welcome to all my students, staff and parents. Each academic year is a new height scaled, another dream realized with new targets set for the future. Each member of this institution is devoted to turning dreams & aspirations into reality through sincerity & perseverance.",
+          "We as Steelmanians always try to maintain the highest quality in academic standards and provide the most conducive environment for our student’s holistic growth and development. We also strive to instill the core values of Respect, Integrity, Compassion and Excellence in our students so they can meet the ever-changing global challenges. Our dedicated and highly qualified staff stand as exemplary role models for our students thereby keeping the ethos of our school shining bright.",
+          "Nelson Mandela rightly said, “Education is the most powerful weapon you can use to change the world.” If there is one thing that can change the world, it is education and Steelmans Public School  is the pillar of formal education. Along with providing academics, we aspire to instill values, life skills and habits that make our students stand out and make a difference in society. We provide our students with ample opportunities to develop 21st-century skills such as collaboration, teamwork, critical thinking, emotional balance, time management and much more.",
+          "“Education is a shared commitment between dedicated teachers, motivated students and enthusiastic parents with high expectations.” We wish to thank all the parents for their faith in Steelmans Public School. Let’s partner together, so that we can see children being successful in whatever path they choose to tread."
         ],
         quote:
           "SUCCESS COMES TO THOSE WHO WORK HARD AND STAYS WITH THOSE, WHO DON’T REST ON THE LAURELS OF THE PAST",
@@ -95,15 +96,30 @@ export function SchoolData({ children }) {
           {
             id: 3,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2019/11/PrimaryWing-768x512.jpg",
-            title: "Primary Wing",
+              "/INFRASTRUCTURE/GYM.jpeg",
+            title: "Gym",
           },
           {
             id: 4,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2019/11/SeniorWing-1-768x512.jpg",
-            title: "Main Building",
+
+              "/INFRASTRUCTURE/IMG_7766.jpeg",
           },
+          {
+            id: 5,
+            image: "/INFRASTRUCTURE/IMG_7773.jpeg ",
+          },
+          {
+            id: 6,
+            image: "/INFRASTRUCTURE/IMG_7774.jpeg ",
+
+          },
+
+          {
+            id: 10,
+            image: "/INFRASTRUCTURE/IMG_7791.jpeg ",
+          },
+
         ],
       },
 
@@ -115,25 +131,35 @@ export function SchoolData({ children }) {
             id: 1,
             image:
               "https://steelmansschool.com/wp-content/uploads/2016/03/Library-6-768x512.jpg",
-            title: "Library",
+
           },
           {
             id: 2,
             image:
               "https://steelmansschool.com/wp-content/uploads/2016/03/Library-2-768x512.jpg",
-            title: "Library",
+
           },
           {
             id: 3,
             image:
               "https://steelmansschool.com/wp-content/uploads/2019/11/Library-8-768x512.jpg",
-            title: "Library",
+
           },
           {
             id: 4,
             image:
               "https://steelmansschool.com/wp-content/uploads/2019/11/library-768x512.jpg",
-            title: "Library",
+
+          }, {
+            id: 5,
+            image:
+              "/LIABRARY/IMG_7315.jpeg",
+
+          }, {
+            id: 6,
+            image:
+              "/LIABRARY/IMG_7316.jpeg",
+
           },
         ],
       },
@@ -175,25 +201,49 @@ export function SchoolData({ children }) {
             id: 1,
             image:
               "https://steelmansschool.com/wp-content/uploads/2019/11/Yoga-768x512.jpg",
-            title: "Playground",
+
           },
           {
             id: 2,
             image:
               "https://steelmansschool.com/wp-content/uploads/2019/03/Playgrounds-3-768x512.jpg",
-            title: "Playground",
+
           },
           {
             id: 3,
             image:
               "https://steelmansschool.com/wp-content/uploads/2019/03/Playgrounds-1-768x512.jpg",
-            title: "Playground",
+
           },
           {
             id: 4,
             image:
               "https://steelmansschool.com/wp-content/uploads/2019/03/Playgrounds-2-768x512.jpg",
-            title: "Playground",
+
+          },
+          {
+            id: 5,
+            image:
+              "/new_sports/playground/playground 2.jpg ",
+
+          },
+          {
+            id: 6,
+            image:
+              "/new_sports/playground/Playground.jpg",
+
+          },
+          {
+            id: 7,
+
+            image:
+              "/new_sports/playground/PLAYGROUND1.jpg",
+
+          },
+          {
+            id: 8,
+            image:
+              "/new_sports/playground/Playground11.jpg",
           },
         ],
       },
@@ -209,6 +259,91 @@ export function SchoolData({ children }) {
               "https://steelmansschool.com/wp-content/uploads/2019/11/Tennis-1024x683.jpg",
             title: "Lawn Tennis Court",
           },
+          {
+            id:233232,
+            image:
+              "/LAWN-TENNIS/WhatsApp Image 2025-05-23 at 11.48.28_5a1216bf.jpg",
+            title: "Lawn Tennis Court",
+          },
+            {
+            id: 99,
+            image:
+              "/LAWN-TENNIS/WhatsApp Image 2025-05-23 at 11.48.34_9dd68ee5.jpg",
+            title: "Lawn Tennis Court",
+          },
+            {
+            id: 211,
+            image:
+              "/LAWN-TENNIS/WhatsApp Image 2025-05-23 at 11.53.08_86e43cd7.jpg",
+            title: "Lawn Tennis Court",
+          },
+        ],
+      },
+      {
+        id: 89,
+        name: "Swimming pool ",
+        images: [
+          // {
+          //   id: 1,
+          //   image:
+          //     "/new_sports/swimming pool/WhatsApp Image 2024-07-03 at 12.09.14 PM (3).jpeg ",
+          //   title: " Swimming pool ",
+          // },
+          {
+            id: 2,
+            image:
+              "/new_sports/swimming pool/WhatsApp Image 2024-07-03 at 12.09.14 PM (4).jpeg",
+            title: "Swimming pool",
+          },
+          {
+            id: 211,
+            image:
+              "/new_sports/swimming pool/WhatsApp Image 2025-05-17 at 13.06.43_49a91835.jpg  ",
+            title: "Swimming pool",
+          },
+          {
+            id: 222,
+            image:
+              "/new_sports/swimming pool/WhatsApp Image 2025-05-17 at 13.06.43_84d9d26f.jpg ",
+            title: "Swimming pool",
+          },
+        ],
+      },
+      {
+        id: 111,
+        name: "THROW BALL",
+        images: [
+          {
+            id: 1,
+            image:
+              "/new_sports/THROW-BALL/IMG-20250517-WA0214.jpg ",
+            title: "THROW BALL",
+          },
+          {
+            id: 2,
+            image:
+              "/new_sports/THROW-BALL/IMG-20250517-WA0215.jpg ",
+
+            title: "THROW BALL",
+          },
+        ],
+      },
+      {
+        id: 101,
+        name: "HAND BALL",
+        images: [
+          {
+            id: 1,
+            image:
+              "/new_sports/HANDBALL/HANDBALL.jpg",
+            title: " HAND BALL",
+          },
+          {
+            id: 2,
+            image:
+              "/new_sports/HANDBALL/WhatsApp Image 2025-05-17 at 13.06.43_ad84d6df.jpg",
+            title: "HAND BALL",
+          },
         ],
       },
       {
@@ -218,9 +353,22 @@ export function SchoolData({ children }) {
           {
             id: 1,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2019/11/BasketBall-1024x683.jpg",
+              "/sports heading/BASKET BALL1.jpg",
             title: "Basket Ball Court",
           },
+          {
+            id: 8,
+            image:
+              "/sports heading/BASKET BALL 5.jpg",
+            title: "Basket Ball Court",
+          },
+          {
+            id: 3,
+            image:
+              "/sports heading/BASKET BALL 4.jpg",
+            title: "Basket Ball Court",
+          },
+
         ],
       },
       {
@@ -229,8 +377,31 @@ export function SchoolData({ children }) {
         images: [
           {
             id: 1,
+
+            image: "/new_sports/VELLEY BALL/1VOLLEY-BALL.jpg",
+            title: "Volley Ball Court",
+          },
+          {
+            id: 2,
+            image: "/new_sports/VELLEY BALL/IMG-20250517-WA0219.jpg",
+            title: "Volley Ball Court",
+          },
+          {
+            id: 123,
+            image: "/new_sports/VELLEY BALL/VOLLEY BALL.jpg",
+            title: "Volley Ball Court",
+          },
+          {
+            id: 113,
             image:
-              "https://steelmansschool.com/wp-content/uploads/2019/11/VolleyBall.jpg",
+              "/new_sports/VELLEY BALL/VOLLEY BALL3.jpg",
+            title: "Volley Ball Court",
+          },
+          {
+            id: 613,
+
+            image: "/new_sports/VELLEY BALL/VOLLEYBALL-6.jpg",
+
             title: "Volley Ball Court",
           },
         ],
@@ -245,6 +416,25 @@ export function SchoolData({ children }) {
               "https://steelmansschool.com/wp-content/uploads/2019/11/Badminton-1024x683.jpg",
             title: "Badminton Court",
           },
+          {
+            id: 9,
+            image:
+              "/new_sports/BADMINTON/BADMINTON 3.jpg",
+            title: "Badminton Court",
+          },
+          {
+            id: 10,
+            image:
+              "/sports heading/BADMINTON.jpg",
+            title: "Badminton Court",
+          },
+          {
+            id: 101,
+            image:
+              "/new_sports/BADMINTON/IMG-20250507-WA0180.jpg",
+            title: "Badminton Court",
+          },
+
         ],
       },
       {
@@ -257,6 +447,18 @@ export function SchoolData({ children }) {
               "https://steelmansschool.com/wp-content/uploads/2019/11/TableTennis-1024x683.jpg",
             title: "Table Tennis Court",
           },
+          {
+            id: 11,
+            image:
+              "/sports heading/TANNIS.jpg",
+            title: "Table Tennis Court",
+          },
+          {
+            id: 21,
+            image:
+              "/sports heading/TENNIS.jpg",
+            title: "Table Tennis Court",
+          },
         ],
       },
       {
@@ -267,69 +469,46 @@ export function SchoolData({ children }) {
             id: 1,
             image:
               "https://steelmansschool.com/wp-content/uploads/2019/11/Yoga-1024x683.jpg",
-            title: "Yoga Session 1",
+
           },
           {
             id: 2,
             image:
               "https://steelmansschool.com/wp-content/uploads/2024/07/sp-1.jpeg",
-            title: "Yoga Session 2",
+
           },
           {
             id: 3,
             image:
               "https://steelmansschool.com/wp-content/uploads/2024/07/sp-3.jpeg",
-            title: "Yoga Session 3",
+
           },
           {
             id: 4,
             image:
               "https://steelmansschool.com/wp-content/uploads/2024/07/sp-4.jpeg",
-            title: "Yoga Session 4",
+
           },
           {
             id: 5,
             image:
               "https://steelmansschool.com/wp-content/uploads/2024/07/sp-5.jpeg",
-            title: "Yoga Session 5",
+
           },
           {
             id: 6,
             image:
               "https://steelmansschool.com/wp-content/uploads/2024/07/sp-2.jpeg",
-            title: "Yoga Session 6",
+
           },
         ],
       },
-      {
-        id: 7,
-        name: "Swimming",
-        images: [
-          {
-            id: 1,
-            image:
-              "https://steelmansschool.com/wp-content/uploads/2024/07/sw-2-scaled.jpeg",
-            title: "Swimming Pool 1",
-          },
-          {
-            id: 2,
-            image:
-              "https://steelmansschool.com/wp-content/uploads/2024/07/sw-1-scaled.jpeg",
-            title: "Swimming Pool 2",
-          },
-          {
-            id: 3,
-            image:
-              "https://steelmansschool.com/wp-content/uploads/2024/07/sw-3-scaled.jpeg",
-            title: "Swimming Pool 3",
-          },
-        ],
-      },
+
     ],
     elementaryWing: [
       {
         id: 0.2,
-        heading: "Graduation Day (2025-26)",
+        heading: "Graduation day:-27th March 2025",
         images: [
           "/graduation-images/IMG-20250417-WA0403.jpg",
           "/graduation-images/IMG-20250417-WA0404.jpg",
@@ -373,7 +552,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 0,
-        heading: "IST DAY IN SCHOOL (2025-26)",
+        heading: "Ist  Day  In School: 1st April 2025",
         images: [
           "/Images/IMG-20250411-WA0035.jpg",
           "/Images/IMG-20250411-WA0037.jpg",
@@ -404,7 +583,7 @@ export function SchoolData({ children }) {
       },
       {
         id: 0.1,
-        heading: "HEALTHY TIFFIN ACTIVITY (2025-26)",
+        heading: "Healthy Tiffin Activity: 7th April 2025",
         images: [
           "/Tiffin activity/IMG-20250411-WA0007.jpg",
           "/Tiffin activity/IMG-20250411-WA0008.jpg",
@@ -422,102 +601,9 @@ export function SchoolData({ children }) {
           "/Tiffin activity/IMG-20250411-WA0032.jpg",
         ],
       },
-      {
-        id: 1,
-        heading: "Book Mark Activity ",
-        images: [
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0034-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0031-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0035-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0037-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0046-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0051-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0052-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0053-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0055-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0050-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0056-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0057-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0059-150x150.jpg",
-          "http://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0061-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0062-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0063-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0064-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0065-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0067-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0068-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0070-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0047-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0048-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0050-1-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0054-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0056-1-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0058-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0062-1-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0061-1-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0059-1-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0069-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0071-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0072-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0074-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0075-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0076-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0078-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0079-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0081-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0082-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0158-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0168-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0169-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2024/07/1-scaled.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2024/07/2.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2024/07/3.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2024/07/5.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210501-WA0005-150x150.jpg",
-        ],
-      },
-      {
-        id: 2,
-        heading: "World Health Day",
-        images: [
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0067-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0068-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0076-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0077-150x150.jpg",
-        ],
-      },
-      {
-        id: 3,
-        heading: "Earth Day",
-        images: [
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0052-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0051-150x150.jpg",
-          "http://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0050-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0049-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0048-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0047-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0046-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0044-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0043-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0042-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0038-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0037-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0035-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0034-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0033-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210421-WA0031-150x150.jpg",
-        ],
-      },
-      {
-        id: 4,
-        heading: "Basant Panchmi Pictures ",
-        images: [
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG_3687-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG_3690-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG_3674-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG_3677-150x150.jpg",
-        ],
-      },
+
+
+
       {
         id: 5,
         heading: "Adhi Chutti Saari (Program at MH1)",
@@ -533,31 +619,78 @@ export function SchoolData({ children }) {
       },
       {
         id: 6,
-        heading: "Republic Day ",
+        heading: "Tear and Paste Activity ( 19th April 2025)",
         images: [
-          "https://steelmansschool.com/wp-content/uploads/2019/11/Class5_Incharge_ManjuSharma-15-180x180.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/ClassPrep_Incharge_HarmanjeetKaur-3-180x180.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/Class5_Incharge_ManjuSharma-10-180x180.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/Class_IST_nightingale_INcharge_RamandeepKaur-3-180x180.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0077-150x150.jpg",
+          "/Tear And Paste Activity FOR ELEMENTARY WING/IMG-20250506-WA0123.jpg",
+          " /Tear And Paste Activity FOR ELEMENTARY WING/IMG-20250506-WA0124.jpg",
+          "/Tear And Paste Activity FOR ELEMENTARY WING/IMG-20250506-WA0125.jpg",
+          "/Tear And Paste Activity FOR ELEMENTARY WING/IMG-20250506-WA0126.jpg",
+          "/Tear And Paste Activity FOR ELEMENTARY WING/IMG-20250506-WA0127.jpg",
         ],
       },
       {
         id: 7,
-        heading: "Mother Day ",
+        heading: " Leaf Printing ( 22th April 2025)",
         images: [
-          "https://steelmansschool.com/wp-content/uploads/2024/07/m-1.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2024/07/m-2.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2024/07/m-3.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2024/07/m-4.jpeg",
+          "/LEAF PAINTING FOR ELEMENTARY WING/IMG-20250426-WA0082.jpg",
+          "/LEAF PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0028.jpg",
+          "/LEAF PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0029.jpg",
+          "/LEAF PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0031.jpg",
+          "/LEAF PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0033.jpg",
+          "/LEAF PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0039.jpg",
         ],
       },
+      {
+        id: 8,
+        heading: " Thumb Painting ( 3rd May 2025)",
+        images: [
+          "/THUMB PAINTING FOR ELEMENTARY WING/1.jpeg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/2.jpeg ",
+          "/THUMB PAINTING FOR ELEMENTARY WING/3.jpeg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0021.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0023.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0024.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0025.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0026.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0037.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0040.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0045.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0047.jpg",
+          "/THUMB PAINTING FOR ELEMENTARY WING/IMG-20250506-WA0048.jpg",
+        ],
+      }, {
+        id: 18,
+        heading: " Mother day Activity(17 May 2025)",
+        images: [
+
+          "/mother-day/IMG-20250517-WA0035.jpg",
+          "/mother-day/IMG-20250517-WA0036.jpg",
+          "/mother-day/IMG-20250517-WA0037.jpg",
+          "/mother-day/IMG-20250517-WA0038.jpg",
+          "/mother-day/IMG-20250517-WA0039.jpg",
+          "/mother-day/IMG-20250517-WA0041.jpg",
+          "/mother-day/IMG-20250517-WA0043.jpg",
+          "/mother-day/IMG-20250517-WA0045.jpg",
+          "/mother-day/IMG-20250517-WA0046.jpg",
+          "/mother-day/IMG-20250517-WA0047.jpg",
+          "/mother-day/IMG-20250517-WA0049.jpg",
+          "/mother-day/WhatsApp Image 2025-05-13 at 15.29.32_5d6b29e3.jpg",
+
+          "/mother-day/WhatsApp Image 2025-05-13 at 15.29.26_3096e50e.jpg",
+ 
+
+        ],
+      },
+
+
+
     ],
     primaryWing: [
       {
         id: 1,
-        heading: "World Health Day (2025-26)",
+        heading: "Healthy Tiffin Activities  on (7th April 2025)",
         images: [
+
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0067-150x150.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0065-150x150.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0063-150x150.jpg",
@@ -565,59 +698,36 @@ export function SchoolData({ children }) {
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0072-150x150.jpg",
           "http://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0061-150x150.jpg",
           "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210407-WA0068-150x150.jpg",
+          "HEALTHY TIFFIN ACTIVITY FOR Primary Wing/IMG-20250411-WA0019.jpg",
+          "HEALTHY TIFFIN ACTIVITY FOR Primary Wing/IMG-20250411-WA0020.jpg",
+          "HEALTHY TIFFIN ACTIVITY FOR Primary Wing/IMG-20250411-WA0022.jpg",
+          "HEALTHY TIFFIN ACTIVITY FOR Primary Wing/IMG-20250411-WA0024.jpg",
+          "HEALTHY TIFFIN ACTIVITY FOR Primary Wing/IMG-20250411-WA0029.jpg",
+
         ],
       },
       {
         id: 2,
-        heading: "Basant Panchmi Pictures (2025-26)",
+        heading: "Best Folk Dress Competition on 12th April 2025",
         images: [
-          "https://steelmansschool.com/wp-content/uploads/2020/12/IMG_3685-150x150.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/WhatsApp-Image-2021-02-17-at-10.07.03-AM-150x150.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/WhatsApp-Image-2021-02-17-at-10.07.06-AM-150x150.jpeg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/IMG_3680-150x150.jpg",
+
+          "/best folk dress/IMG-20250417-WA0162.jpg",
+          "/best folk dress/IMG-20250417-WA0303.jpg",
+          "/best folk dress/IMG-20250417-WA0308.jpg",
+          "/best folk dress/IMG-20250417-WA0311.jpg ",
+          "/best folk dress/IMG-20250417-WA0312.jpg ",
+          "/best folk dress/IMG-20250417-WA0318.jpg ",
+          "/best folk dress/IMG-20250417-WA0319.jpg ",
+          "/best folk dress/IMG-20250417-WA0321.jpg ",
+          "/best folk dress/IMG-20250417-WA0322.jpg ",
+          "/best folk dress/IMG-20250417-WA0326.jpg ",
+          "/best folk dress/IMG-20250417-WA0328.jpg ",
+
+
         ],
       },
-      {
-        id: 3,
-        heading: "Christmas Activity (2020-21)",
-        quote: "Christmas Activity performed by our students.",
-        images: [
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas5.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas4.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas3.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas2.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas6.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas7.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas8.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2020/12/christmas1.jpg",
-        ],
-      },
-      {
-        id: 4,
-        heading: "Diwali Activities (2020-21)",
-        quote: "Diwali Activities performed by our students.",
-        images: [
-          "https://steelmansschool.com/wp-content/uploads/2016/03/IMG_20201113_215612.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/IMG_20201113_215722.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/IMG-20201116-WA0016.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/SukhmanpreetKaur_8_DIVYA_STAND_MAKING_KulwinderMam.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/HarmanpreetKaur_8_DIVYA_STAND_MAKING_KulwinderMam.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/20201117_181841.jpg",
-        ],
-      },
-      {
-        id: 5,
-        heading: "Mother's Day Activities (2020-21)",
-        quote: "Mother's Day Activities performed by our students.",
-        images: [
-          "https://steelmansschool.com/wp-content/uploads/2016/03/m1.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/m2.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/m6.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/m5.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/m4.jpg",
-          "https://steelmansschool.com/wp-content/uploads/2016/03/m3.jpg",
-        ],
-      },
+
+
     ],
   };
   return <Information.Provider value={data}>{children}</Information.Provider>;

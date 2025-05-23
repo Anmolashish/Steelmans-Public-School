@@ -43,13 +43,13 @@ export default function HomePage5() {
   return (
     <div className="w-full min-h-[85vh] h-fit bg-[url(https://steelmansschool.com/wp-content/uploads/2015/10/bg_lastest_new.jpg)] bg-cover bg-center flex justify-center items-center py-10 overflow-hidden">
       <div className="w-full max-w-[1200px] h-full max-h-[70%] flex flex-col justify-between items-center relative gap-5">
+        
         {/* Heading */}
         <div className="w-full">
-          <h1 className="text-4xl font-bold text-white flex flex-col after:content-[''] after:block after:w-[10%] after:h-[1px] after:rounded-full after:mt-5 after:bg-white after:transition-all after:duration-300 hover:after:w-[30%] justify-center items-center text-center">
+          <h1 className="text-5xl font-extrabold text-white flex flex-col after:content-[''] after:block after:w-[10%] after:h-[2px] after:rounded-full after:mt-5 after:bg-white after:transition-all after:duration-300 hover:after:w-[30%] justify-center items-center text-center">
             Messages
-            <span className="text-sm font-light mt-1">
-              Here's the messages from all the authority of Steelmans public
-              school
+            <span className="text-xl font-semibold mt-2 text-gray-200">
+              Here's the messages from all the authority of Steelmans Public School
             </span>
           </h1>
         </div>
@@ -80,7 +80,7 @@ export default function HomePage5() {
                 <img
                   src={slides[currentSlide].img}
                   alt="Slide Image"
-                  className=" w-1/2 h-[300px] object-cover rounded-lg shadow-lg"
+                  className="w-1/2 h-[300px] object-cover rounded-lg shadow-lg"
                 />
               </div>
             </motion.div>
@@ -114,3 +114,4 @@ export default function HomePage5() {
     </div>
   );
 }
+ 

@@ -5,7 +5,7 @@ export default function HomePage2() {
   const data = [
     {
       id: 1,
-      name: "Elementry Wing",
+      name: "Elementary Wing",
       link: "/elementary-wing",
       image: [
         "https://steelmansschool.com/wp-content/uploads/2019/11/IMG-20210430-WA0070-1-300x300.jpg",
@@ -37,7 +37,7 @@ export default function HomePage2() {
         <div className="heading text-3xl font-semibold flex flex-col  after:content-[''] after:block after:w-[10%] after:h-[1px] after:rounded-full after:mt-5 after:bg-black after:transition-all after:duration-300 hover:after:w-[30%] justify-center items-center text-center">
           ACTIVITIES
           <small className="text-gray-500 text-sm font-light mt-1 ">
-            Engage with the Newest activites happening in Steelmans public
+            Engage with the Newest activites happening in Steelmans Public
             school
           </small>
         </div>

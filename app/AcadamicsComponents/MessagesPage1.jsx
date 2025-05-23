@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 import React, { useContext } from "react";
 import Information from "../Data/SchoolData";
 import Header from "../Componenets/Header";
@@ -6,15 +6,13 @@ import Header from "../Componenets/Header";
 export default function MessagesPage1(props) {
   const data = useContext(Information);
   const info = data.messages;
-
   const message = info.find((e) => e.slug === props.slug);
-  console.log(message);
 
   if (!message) {
     return (
       <>
-        <Header heading={"No data found"} />
-        <div className="w-full h-[50vh] flex justify-center items-center">
+        <Header heading="No data found" />
+        <div className="w-full h-[50vh] flex justify-center items-center text-xl font-semibold">
           No data found here
         </div>
       </>
@@ -24,34 +22,43 @@ export default function MessagesPage1(props) {
   return (
     <>
       <Header heading={message.heading} />
-      <div className="w-full min-h-screen flex justify-center flex-col items-center">
-        <div className="main w-[90%] gap-5 p4 max-sm:flex-wrap flex min-h-[70vh] h-fit max-w-[1200px] py-10">
-          <div className="w-1/3  h-full mt-10 max-sm:w-full">
+
+      <div className="w-full min-h-screen flex flex-col items-center py-10">
+        {/* Main Section */}
+        <div className="main w-[90%] max-w-[1200px] flex gap-10 max-sm:flex-col py-10">
+          {/* Image & Info */}
+          <div className="w-1/3 max-sm:w-full mt-5 flex flex-col items-center">
             <img src={message.image} alt="" className="w-full rounded-xl" />
-            <div className="text-lg font-bold text-center mt-4">
+            <div className="text-lg sm:text-xl font-bold text-center mt-6">
               {message.name}
             </div>
-            <div className="text-sm font-light text-center">
-              {message.position}
-            </div>
+            <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-center text-gray-800 mt-2">
+  {message.position}
+</div>
+
           </div>
-          <div className="w-2/3  h-full  max-sm:w-full max-sm:text-center">
-            {message.message.map((e, i) => {
-              return (
-                <div
-                  key={i}
-                  className="text-2xl font-semibold mt-10 max-md:text-lg"
-                >
-                  {e}
-                </div>
-              );
-            })}
+
+          {/* Message Text */}
+          <div className="w-2/3 max-sm:w-full">
+            {message.message.map((e, i) => (
+              <p
+                key={i}
+                className="text-base sm:text-lg md:text-xl leading-relaxed mt-6"
+              >
+                {e}
+              </p>
+            ))}
           </div>
         </div>
-        <div className="main w-[80%] gap-5 p4 flex min-h-[20vh] h-fit border-t-2 border-b-2 mb-4 max-w-[1200px] py-10">
-          <div className="text-3xl text-center font-bold ">{message.quote}</div>
+
+        {/* Quote Section */}
+        <div className="w-[80%] max-w-[1000px] border-t-2 border-b-2 py-8 mt-6 text-center">
+          <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 italic">
+            “{message.quote}”
+          </div>
         </div>
       </div>
     </>
   );
 }
+//  heading must be biger 

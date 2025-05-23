@@ -1,316 +1,79 @@
-"use client";
-import React from "react";
+ import { color } from 'framer-motion';
+import React from 'react';
 
-const TransferCertifcates = () => {
-  const tcData = [
-    {
-      sno: 1,
-      tcNo: "11/524",
-      admnNo: 1411,
-      studentName: "Amanveer Singh",
-      fatherName: "S. Ravinder Singh",
-      classLeft: "IV",
-      dateOfIssue: "29/06/2020",
-    },
-    {
-      sno: 2,
-      tcNo: "11/525",
-      admnNo: 1057,
-      studentName: "Gurmanjot Singh Cheema",
-      fatherName: "S. Mandeep Singh",
-      classLeft: "IV",
-      dateOfIssue: "16/07/2020",
-    },
-    {
-      sno: 3,
-      tcNo: "11/526",
-      admnNo: 2018,
-      studentName: "Pushwinder Singh",
-      fatherName: "S. Jagtar Singh",
-      classLeft: "XII",
-      dateOfIssue: "17/07/2020",
-    },
-    {
-      sno: 4,
-      tcNo: "11/528",
-      admnNo: 1310,
-      studentName: "Gobind Singh",
-      fatherName: "S. Dilbagh Singh",
-      classLeft: "IX",
-      dateOfIssue: "20/07/2020",
-    },
-    {
-      sno: 5,
-      tcNo: "11/529",
-      admnNo: 504,
-      studentName: "Harmandeep Singh Dhariwal",
-      fatherName: "S. Gurpal Singh",
-      classLeft: "XII",
-      dateOfIssue: "04/08/2020",
-    },
-    {
-      sno: 6,
-      tcNo: "11/530",
-      admnNo: 1848,
-      studentName: "Tarandeep Singh",
-      fatherName: "S. Bhinder Singh",
-      classLeft: "X",
-      dateOfIssue: "10/08/2020",
-    },
-    {
-      sno: 7,
-      tcNo: "11/531",
-      admnNo: 2024,
-      studentName: "Navjot Singh",
-      fatherName: "S. Hakam Singh",
-      classLeft: "XI",
-      dateOfIssue: "08/08/2020",
-    },
-    {
-      sno: 8,
-      tcNo: "11/532",
-      admnNo: 1432,
-      studentName: "Jashanpreet Singh",
-      fatherName: "S. Surjit Singh",
-      classLeft: "X",
-      dateOfIssue: "17/08/2020",
-    },
-    {
-      sno: 9,
-      tcNo: "11/533",
-      admnNo: 1849,
-      studentName: "Harmanpreet Kaur",
-      fatherName: "S. Binder Singh",
-      classLeft: "XII",
-      dateOfIssue: "18/08/2020",
-    },
-    {
-      sno: 10,
-      tcNo: "11/534",
-      admnNo: 1990,
-      studentName: "Amisha",
-      fatherName: "S. Ranjit Singh",
-      classLeft: "XI",
-      dateOfIssue: "19/08/2020",
-    },
-    {
-      sno: 11,
-      tcNo: "11/535",
-      admnNo: 661,
-      studentName: "Sachpreet Kaur",
-      fatherName: "S. Gurpreet Singh",
-      classLeft: "X",
-      dateOfIssue: "01/09/2020",
-    },
-    {
-      sno: 12,
-      tcNo: "11/536",
-      admnNo: 895,
-      studentName: "Manavjot Singh",
-      fatherName: "S. Gurpreet Singh",
-      classLeft: "VIII",
-      dateOfIssue: "01/09/2020",
-    },
-    {
-      sno: 13,
-      tcNo: "11/537",
-      admnNo: 1896,
-      studentName: "Harsimran Kaur",
-      fatherName: "S. Kashmira Singh",
-      classLeft: "III",
-      dateOfIssue: "12/09/2020",
-    },
-    {
-      sno: 14,
-      tcNo: "11/538",
-      admnNo: 1516,
-      studentName: "Ajay Singh",
-      fatherName: "S. Kesar Singh",
-      classLeft: "IX",
-      dateOfIssue: "12/09/2020",
-    },
-    {
-      sno: 15,
-      tcNo: "11/539",
-      admnNo: 1224,
-      studentName: "Jashandeep Singh",
-      fatherName: "S. Jarnail Singh",
-      classLeft: "VIII",
-      dateOfIssue: "16/09/2020",
-    },
-    {
-      sno: 16,
-      tcNo: "11/540",
-      admnNo: 1614,
-      studentName: "Jasleen Kaur",
-      fatherName: "S. Bhupinder Singh",
-      classLeft: "VIII",
-      dateOfIssue: "16/09/2020",
-    },
-    {
-      sno: 17,
-      tcNo: "11/541",
-      admnNo: 769,
-      studentName: "Vanshika Garg",
-      fatherName: "Sh. Ashok Kumar",
-      classLeft: "X",
-      dateOfIssue: "17/09/2020",
-    },
-    {
-      sno: 18,
-      tcNo: "11/542",
-      admnNo: 2001,
-      studentName: "Bhupinder Singh Deol",
-      fatherName: "S. Hardeep Singh",
-      classLeft: "XI",
-      dateOfIssue: "17/09/2020",
-    },
-    {
-      sno: 19,
-      tcNo: "11/543",
-      admnNo: 2021,
-      studentName: "Akashdeep Singh",
-      fatherName: "S. Balvir Singh",
-      classLeft: "XI",
-      dateOfIssue: "21/09/2020",
-    },
-    {
-      sno: 20,
-      tcNo: "11/544",
-      admnNo: 2022,
-      studentName: "Ekamveer Singh",
-      fatherName: "S. Ninder Singh",
-      classLeft: "XI",
-      dateOfIssue: "21/09/2020",
-    },
-    {
-      sno: 21,
-      tcNo: "11/546",
-      admnNo: 754,
-      studentName: "Harnoor Gill",
-      fatherName: "L. Narinder Singh",
-      classLeft: "X",
-      dateOfIssue: "22/09/2020",
-    },
-    {
-      sno: 22,
-      tcNo: "11/547",
-      admnNo: 1862,
-      studentName: "Ramanpreet Singh",
-      fatherName: "S. Kulwant Singh",
-      classLeft: "XII",
-      dateOfIssue: "03/10/2020",
-    },
-    {
-      sno: 23,
-      tcNo: "11/548",
-      admnNo: 946,
-      studentName: "Navneet Kaur",
-      fatherName: "S. Pargat Singh",
-      classLeft: "VII",
-      dateOfIssue: "03/10/2020",
-    },
-    {
-      sno: 24,
-      tcNo: "11/550",
-      admnNo: 1027,
-      studentName: "Jasmeet Singh",
-      fatherName: "S. Pargat Singh",
-      classLeft: "V",
-      dateOfIssue: "03/10/2020",
-    },
-    {
-      sno: 25,
-      tcNo: "12/551",
-      admnNo: 1734,
-      studentName: "Sehajpreet Kaur",
-      fatherName: "S. Sandeep Singh",
-      classLeft: "LKG",
-      dateOfIssue: "03/10/2020",
-    },
-    {
-      sno: 26,
-      tcNo: "12/552",
-      admnNo: 1325,
-      studentName: "Komalpreet Kaur",
-      fatherName: "S. Sandeep Singh",
-      classLeft: "I",
-      dateOfIssue: "03/10/2020",
-    },
-    {
-      sno: 27,
-      tcNo: "12/553",
-      admnNo: 729,
-      studentName: "Harshdeep Singh",
-      fatherName: "S. Naginder Singh",
-      classLeft: "X",
-      dateOfIssue: "19/10/2020",
-    },
-    {
-      sno: 28,
-      tcNo: "12/554",
-      admnNo: 1813,
-      studentName: "Saibhang Singh",
-      fatherName: "S. Manminder Singh",
-      classLeft: "XII",
-      dateOfIssue: "19/10/2020",
-    },
-    {
-      sno: 29,
-      tcNo: "12/555",
-      admnNo: 1354,
-      studentName: "Gurchain Singh",
-      fatherName: "S. Avtar Singh",
-      classLeft: "XII",
-      dateOfIssue: "19/10/2020",
-    },
-    {
-      sno: 30,
-      tcNo: "12/556",
-      admnNo: 1379,
-      studentName: "Kamaljeet Singh",
-      fatherName: "S. Ranjeet Singh",
-      classLeft: "X",
-      dateOfIssue: "20/10/2020",
-    },
-    {
-      sno: 31,
-      tcNo: "12/557",
-      admnNo: 2017,
-      studentName: "Simranjeet Singh",
-      fatherName: "S. Satgur Singh",
-      classLeft: "XII",
-      dateOfIssue: "07/11/2020",
-    },
-  ];
+const tcData = [
+  { sno: 1, tcNo: 474, admnNo: 2676, studentName: "VISHAV SINGH JAWANDA", fatherName: "JASVEER SINGH JAWANDA", classLeft: "VI", dateOfIssue: "31/03/2025" },
+  { sno: 2, tcNo: 475, admnNo: 1187, studentName: "MUKHRAJ SINGH", fatherName: "KULWINDER SINGH", classLeft: "VIII", dateOfIssue: "31/03/2025" },
+  { sno: 3, tcNo: 476, admnNo: 1493, studentName: "GAVI SINGH", fatherName: "KULDEEP SINGH", classLeft: "VI", dateOfIssue: "01/04/2025" },
+  { sno: 4, tcNo: 477, admnNo: 2210, studentName: "RANVEER SINGH", fatherName: "KULDEEP SINGH", classLeft: "IV", dateOfIssue: "01/04/2025" },
+  { sno: 5, tcNo: 478, admnNo: 2079, studentName: "JASMEEN KAUR", fatherName: "KAMALJIT SINGH", classLeft: "IV", dateOfIssue: "02/04/2025" },
+  { sno: 6, tcNo: 479, admnNo: 1067, studentName: "JASMEET KAUR", fatherName: "BALKAR SINGH", classLeft: "IX", dateOfIssue: "02/04/2025" },
+  { sno: 7, tcNo: 480, admnNo: 2478, studentName: "NIMRAT KAUR", fatherName: "MANDEEP SINGH", classLeft: "L.K.G.", dateOfIssue: "02/04/2025" },
+  { sno: 8, tcNo: 481, admnNo: 2522, studentName: "PARAMVIR SINGH", fatherName: "MANDEEP SINGH", classLeft: "X", dateOfIssue: "05/04/2025" },
+  { sno: 9, tcNo: 482, admnNo: 2518, studentName: "GURJOT SINGH", fatherName: "SOHAN SINGH", classLeft: "IX", dateOfIssue: "09/04/2025" },
+  { sno: 10, tcNo: 483, admnNo: "", studentName: "", fatherName: "", classLeft: "", dateOfIssue: "" },
+  { sno: 11, tcNo: 484, admnNo: 2277, studentName: "MANRAJ SINGH NIRMAN", fatherName: "DAVINDER SINGH", classLeft: "I", dateOfIssue: "09/04/2025" },
+  { sno: 12, tcNo: 485, admnNo: 2180, studentName: "RANDEEP KAUR", fatherName: "AMARJIT SINGH", classLeft: "X", dateOfIssue: "16/04/2025" },
+  { sno: 13, tcNo: 486, admnNo: "", studentName: "", fatherName: "", classLeft: "", dateOfIssue: "" },
+  { sno: 14, tcNo: 487, admnNo: 1013, studentName: "HARJOT SINGH", fatherName: "DAVINDER SINGH", classLeft: "X", dateOfIssue: "16/04/2025" },
+  { sno: 15, tcNo: 488, admnNo: 2579, studentName: "MOHAMMAD REHMAN", fatherName: "VAKIL MOHD", classLeft: "U.K.G.", dateOfIssue: "17/04/2025" },
+  { sno: 16, tcNo: 489, admnNo: 2296, studentName: "SUKHWINDER SINGH", fatherName: "JAGBIR SINGH", classLeft: "X", dateOfIssue: "19/04/2025" },
+  { sno: 17, tcNo: 490, admnNo: "", studentName: "", fatherName: "", classLeft: "", dateOfIssue: "" },
+  { sno: 18, tcNo: 491, admnNo: 2295, studentName: "NIYAMAT KAUR", fatherName: "JAGBIR SINGH", classLeft: "VI", dateOfIssue: "19/04/2025" },
+  { sno: 19, tcNo: 492, admnNo: 2565, studentName: "SIMRAN KAUR", fatherName: "KARAM SINGH", classLeft: "XII", dateOfIssue: "21/04/2025" },
+  { sno: 20, tcNo: 493, admnNo: 1920, studentName: "PRABHBIR SINGH", fatherName: "HARDEEP SINGH", classLeft: "IV", dateOfIssue: "21/04/2025" },
+  { sno: 21, tcNo: 494, admnNo: 1177, studentName: "SAHIBJOT SINGH", fatherName: "BALKAR SINGH", classLeft: "VIII", dateOfIssue: "07/05/2025" },
+  { sno: 22, tcNo: 495, admnNo: 1434, studentName: "GURNOOR SINGH", fatherName: "AJMER SINGH", classLeft: "VIII", dateOfIssue: "14/05/2025" },
+  { sno: 23, tcNo: 496, admnNo: 2143, studentName: "GURLEEN KAUR", fatherName: "JIWAN SINGH", classLeft: "XI", dateOfIssue: "17/05/2025" },
+];
 
+const tableStyle = {
+  width: '100%',
+  borderCollapse: 'collapse',
+  marginTop: '20px',
+};
+
+const thTdStyle = {
+  border: '1px solid #ccc',
+  padding: '10px',
+  color: '#333',
+  textAlign: 'left',
+};
+
+const headerStyle = {
+  ...thTdStyle,
+  backgroundColor: 'black',
+  fontWeight: 'bold',
+  color: 'white',
+};
+
+const StudentTCList = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold text-center mb-6">TCs Issued</h1>
-
-      <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
-          <thead className="bg-gray-800 text-white">
+    <div style={{ padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Transfer Certificate (TC) List</h2>
+      <div style={{ overflowX: 'auto' }}>
+        <table style={tableStyle}>
+          <thead>
             <tr>
-              <th className="py-3 px-4 text-left">SNO.</th>
-              <th className="py-3 px-4 text-left">TC No.</th>
-              <th className="py-3 px-4 text-left">Admn No.</th>
-              <th className="py-3 px-4 text-left">Student Name</th>
-              <th className="py-3 px-4 text-left">Father's Name</th>
-              <th className="py-3 px-4 text-left">Class Left</th>
-              <th className="py-3 px-4 text-left">Date of Issue</th>
+              <th style={headerStyle}>S.No.</th>
+              <th style={headerStyle}>TC No.</th>
+              <th style={headerStyle}>Admn No.</th>
+              <th style={headerStyle}>Student Name</th>
+              <th style={headerStyle}>Father's Name</th>
+              <th style={headerStyle}>Class Left</th>
+              <th style={headerStyle}>Date of Issue</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-200">
-            {tcData.map((item) => (
-              <tr key={item.sno} className="hover:bg-gray-50">
-                <td className="py-3 px-4">{item.sno}</td>
-                <td className="py-3 px-4">{item.tcNo}</td>
-                <td className="py-3 px-4">{item.admnNo}</td>
-                <td className="py-3 px-4">{item.studentName}</td>
-                <td className="py-3 px-4">{item.fatherName}</td>
-                <td className="py-3 px-4">{item.classLeft}</td>
-                <td className="py-3 px-4">{item.dateOfIssue}</td>
+          <tbody>
+            {tcData.map((item, index) => (
+              <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#ffffff' : '#f9f9f9' }}>
+                <td style={thTdStyle}>{item.sno}</td>
+                <td style={thTdStyle}>{item.tcNo}</td>
+                <td style={thTdStyle}>{item.admnNo}</td>
+                <td style={thTdStyle}>{item.studentName}</td>
+                <td style={thTdStyle}>{item.fatherName}</td>
+                <td style={thTdStyle}>{item.classLeft}</td>
+                <td style={thTdStyle}>{item.dateOfIssue}</td>
               </tr>
             ))}
           </tbody>
@@ -320,4 +83,4 @@ const TransferCertifcates = () => {
   );
 };
 
-export default TransferCertifcates;
+export default StudentTCList;
